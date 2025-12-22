@@ -32,6 +32,10 @@
                     "url" : "https://github.com/dida-code/opstakultura",
                     "tag" : "v1.1.3",
                     "commit" : "94b795936b3b9fac52c21871924c3cf924e55287"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix_appdata.patch"
                 }
             ]
         }
