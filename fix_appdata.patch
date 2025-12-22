@@ -1,0 +1,56 @@
+From abf9902166130e0bd503f9f9638c1ad48d7afbcc Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Mon, 22 Dec 2025 14:18:38 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/io.github.dida_code.OpstaKultura.appdata.xml.in | 11 +++++++----
+ data/io.github.dida_code.OpstaKultura.desktop.in     |  2 +-
+ 2 files changed, 8 insertions(+), 5 deletions(-)
+
+diff --git a/data/io.github.dida_code.OpstaKultura.appdata.xml.in b/data/io.github.dida_code.OpstaKultura.appdata.xml.in
+index 5826112..b59f811 100644
+--- a/data/io.github.dida_code.OpstaKultura.appdata.xml.in
++++ b/data/io.github.dida_code.OpstaKultura.appdata.xml.in
+@@ -1,20 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<component type="desktop">
++<component type="desktop-application">
+ 	<id>io.github.dida_code.OpstaKultura.desktop</id>
+ 	<metadata_license>CC0-1.0</metadata_license>
+  	<project_license>GPL-3.0-or-later</project_license>
+ 	<name>Opsta Kultura</name>
+ 	<description>
+ 	  <p>A simple knowledge quiz on general culture.</p>
+ 	</description>
+   <summary>Game, knowledge quiz</summary>
+-  <developer_name>Dimitrije Kocic</developer_name>
+-	<content_rating type="oars-1.0">
+-  </content_rating>
++  <developer id="io.github.dida_code">
++    <name>Dimitrije Kocic</name>
++  </developer>
++	<content_rating type="oars-1.1" />
+ 
+   <launchable type="desktop-id">io.github.dida_code.OpstaKultura.desktop</launchable>
+ 
+   <url type="homepage">https://github.com/dida-code/opstakultura</url>
++  <url type="bugtracker">https://github.com/dida-code/opstakultura/issues</url>
++  <url type="vcs-browser">https://github.com/dida-code/opstakultura</url>
+ 
+   <releases>
+   	<release version="1.1.3" date="2023-10-18">
+diff --git a/data/io.github.dida_code.OpstaKultura.desktop.in b/data/io.github.dida_code.OpstaKultura.desktop.in
+index f7f5f94..21ef5dd 100644
+--- a/data/io.github.dida_code.OpstaKultura.desktop.in
++++ b/data/io.github.dida_code.OpstaKultura.desktop.in
+@@ -4,5 +4,5 @@ Exec=opstakultura
+ Icon=io.github.dida_code.OpstaKultura
+ Terminal=false
+ Type=Application
+-Categories=GTK;
++Categories=GTK;Game;LogicGame;
+ StartupNotify=true
+--
+libgit2 1.7.2
+
